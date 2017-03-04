@@ -29,6 +29,10 @@ public class Pin : MonoBehaviour {
             isPinned = true;
             transform.parent = other.transform;
         }
+        else if (other.tag == "pinHead")
+        {
+            GameManager.Instance.GameOver ();
+        }
     }
 
 }
