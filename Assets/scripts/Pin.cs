@@ -28,6 +28,7 @@ public class Pin : MonoBehaviour {
         {
             isPinned = true;
             transform.parent = other.transform;
+            ScoreManager.Instance.IncrementScore ();
         }
         else if (other.tag == "pinHead")
         {
