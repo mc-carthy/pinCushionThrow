@@ -104,6 +104,7 @@ GameObject:
   - component: {fileID: 835233147}
   - component: {fileID: 835233146}
   - component: {fileID: 835233151}
+  - component: {fileID: 835233152}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -141,7 +142,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.05882353, g: 0.05882353, b: 0.05882353, a: 0}
+  m_BackGroundColor: {r: 1, g: 1, b: 0.84313726, a: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
@@ -190,6 +191,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60d2f0ea28c514958935bb19f803cd37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 835233152}
+--- !u!95 &835233152
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 835233145}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c94a00b8ee82f4af495aae398b7e1637, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1 &1125102403
 GameObject:
   m_ObjectHideFlags: 0
@@ -239,7 +258,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 4acc3a116982c444a82eaefa223b198d, type: 3}
-  m_Color: {r: 0.84313726, g: 0.84313726, b: 0.7490196, a: 0.49803922}
+  m_Color: {r: 0.05882353, g: 0.05882353, b: 0.05882353, a: 0.49803922}
   m_FlipX: 0
   m_FlipY: 0
 --- !u!4 &1125102405
@@ -278,6 +297,7 @@ GameObject:
   - component: {fileID: 1705878446}
   - component: {fileID: 1705878449}
   - component: {fileID: 1705878448}
+  - component: {fileID: 1705878450}
   m_Layer: 0
   m_Name: rotator
   m_TagString: rotator
@@ -317,7 +337,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 4acc3a116982c444a82eaefa223b198d, type: 3}
-  m_Color: {r: 0.84313726, g: 0.84313726, b: 0.7490196, a: 1}
+  m_Color: {r: 0.05882353, g: 0.05882353, b: 0.05882353, a: 1}
   m_FlipX: 0
   m_FlipY: 0
 --- !u!4 &1705878447
@@ -359,3 +379,20 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.5
+--- !u!95 &1705878450
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1705878445}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 5310d3bb43baa4b2c88514f15a2af9ac, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
